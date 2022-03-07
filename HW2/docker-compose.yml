@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  csce_5703_hw2_jupyter:
+    build:
+      context: ./
+      dockerfile: docker/jupyter/Dockerfile
+    container_name: csce_5703_hw2_jupyter
+    image: csce_5703_hw2_jupyter
+    ports:
+     - 5001:5001
+    volumes:
+     - ./notebooks:/notebooks
