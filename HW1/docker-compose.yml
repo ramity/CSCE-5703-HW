@@ -1,11 +1,11 @@
 version: '3.9'
 services:
-  csce_5703_jupyter:
+  csce_5703_hw1_jupyter:
     build:
       context: ./
       dockerfile: docker/jupyter/Dockerfile
-    container_name: csce_5703_jupyter
-    image: csce_5703_jupyter
+    container_name: csce_5703_hw1_jupyter
+    image: csce_5703_hw1_jupyter
     ports:
      - 5000:5000
     volumes:
